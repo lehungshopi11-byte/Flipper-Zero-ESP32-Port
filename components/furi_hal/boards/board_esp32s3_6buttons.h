@@ -25,6 +25,7 @@
 #define BOARD_PIN_BTN_RIGHT     39
 #define BOARD_PIN_BTN_OK        0
 #define BOARD_PIN_BTN_BACK      4
+#define BOARD_PIN_BUTTON_BOOT   0  
 #define BOARD_PIN_BATTERY_ADC   2
 
 /* ---- LCD Pins (ILI9341 via SPI) ---- */
