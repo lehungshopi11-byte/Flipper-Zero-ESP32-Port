@@ -15,7 +15,7 @@
 #pragma once
 
 /* ---- Board metadata ---- */
-#define BOARD_NAME        "Custom ILI9341 6-Button"
+#define BOARD_NAME        "esp32s3_6buttons"
 #define BOARD_TARGET      "esp32s3"
 
 /* ---- Hardware Button Pins ---- */
@@ -25,7 +25,7 @@
 #define BOARD_PIN_BTN_RIGHT     39
 #define BOARD_PIN_BTN_OK        0
 #define BOARD_PIN_BTN_BACK      4
-#define BOARD_PIN_BATTERY_ADC   UINT16_MAX
+#define BOARD_PIN_BATTERY_ADC   2
 
 /* ---- LCD Pins (ILI9341 via SPI) ---- */
 #define BOARD_PIN_LCD_MOSI      17
@@ -49,7 +49,7 @@
 #define BOARD_LCD_GAP_X         0
 #define BOARD_LCD_GAP_Y         0
 #define BOARD_LCD_BL_ACTIVE_LOW false
-#define BOARD_LCD_COLOR_ORDER_BGR false
+#define BOARD_LCD_COLOR_ORDER_BGR true
 
 /* Flipper framebuffer → display color mapping (RGB565) */
 #define BOARD_LCD_FG_COLOR      0xA0FD
