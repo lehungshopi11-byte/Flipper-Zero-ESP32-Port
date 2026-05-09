@@ -14,8 +14,8 @@ static void spam_ssids_callback(void* context, uint32_t index) {
 
 void wifi_app_scene_spam_ssids_menu_on_enter(void* context) {
     WifiApp* app = context;
-    submenu_add_item(app->submenu, "Funny SSIDs", SpamSsidsIndexFunny, spam_ssids_callback, app);
-    submenu_add_item(app->submenu, "Rick Roll", SpamSsidsIndexRickroll, spam_ssids_callback, app);
+    submenu_add_item(app->submenu, "Long List", SpamSsidsIndexFunny, spam_ssids_callback, app);
+    submenu_add_item(app->submenu, "Countries", SpamSsidsIndexRickroll, spam_ssids_callback, app);
     submenu_add_item(app->submenu, "Random SSIDs", SpamSsidsIndexRandom, spam_ssids_callback, app);
     submenu_add_item(app->submenu, "Custom SSIDs", SpamSsidsIndexCustom, spam_ssids_callback, app);
     view_dispatcher_switch_to_view(app->view_dispatcher, WifiAppViewSubmenu);
