@@ -83,12 +83,12 @@ static void other_os_input_callback(InputEvent* event, void* context) {
     if(event->type != InputTypeShort) return;
 
     switch(event->key) {
-    case InputKeRight:
+    case InputKeyRight:
         ctx->choice = OtherOsChoiceLoad;
         furi_semaphore_release(ctx->done);
         break;
-    case InputKeyUp:
     case InputKeyLeft:
+    case InputKeyBack:
         ctx->choice = OtherOsChoiceCancel;
         furi_semaphore_release(ctx->done);
         break;
