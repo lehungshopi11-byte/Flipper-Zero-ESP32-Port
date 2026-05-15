@@ -73,8 +73,12 @@ static bool wlan_portscan_view_input_callback(InputEvent* event, void* context) 
     ViewDispatcher* vd = context;
     if(event->type != InputTypeShort && event->type != InputTypeRepeat) return false;
 
-    if(event->key == InputKeyUp || event->key == InputKeyDown) {
-        view_dispatcher_send_custom_event(vd, event->key);
+    if(event->key == InputKeyUp || event->key == InputKeyDown ||
+       event->key == InputKeyLeft || event->key == InputKeyRight) {
+        InputKey key = event->key;
+        if(key == InputKeyLeft) key = InputKeyUp;
+        if(key == InputKeyRight) key = InputKeyDown;
+        view_dispatcher_send_custom_event(vd, key);
         return true;
     }
     if(event->key == InputKeyOk && event->type == InputTypeShort) {
