@@ -118,7 +118,7 @@ static bool wlan_evil_portal_view_input(InputEvent* event, void* context) {
     if(event->type != InputTypeShort) return false;
     // Encoder-Down löst den rechten Soft-Button (Start/Stop) aus
     // — analog zu wlan_deauther_view / wlan_sniffer_view.
-    if(event->key == InputKeyDown) {
+   if(event->key == InputKeyDown || event->key == InputKeyRight) {
         if(v->action_cb) v->action_cb(v->action_ctx);
         return true;
     }
