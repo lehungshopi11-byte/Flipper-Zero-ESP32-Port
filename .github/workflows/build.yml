@@ -29,7 +29,7 @@ jobs:
             chip: esp32s3
             flash_size: 16MB
           - name: esp32s3_6buttons
-            script_key: esp32s3_6buttons
+            script_key: esp32s3
             build_dir: build_6buttons
             artifact_name: flipper-esp32s3-6buttons
             chip: esp32s3
