@@ -21,8 +21,8 @@
 /* ---- Hardware Button Pins ---- */
 #define BOARD_PIN_BTN_UP        41
 #define BOARD_PIN_BTN_DOWN      40
-#define BOARD_PIN_BTN_LEFT      38
-#define BOARD_PIN_BTN_RIGHT     39
+#define BOARD_PIN_BTN_LEFT      39
+#define BOARD_PIN_BTN_RIGHT     38
 #define BOARD_PIN_BTN_OK        0
 #define BOARD_PIN_BTN_BACK      4
 #define BOARD_PIN_BUTTON_BOOT   0  
@@ -37,16 +37,16 @@
 #define BOARD_PIN_LCD_BL        6
 
 /* ---- LCD Display Configuration ---- */
-#define BOARD_LCD_H_RES         320     /* Native width after swap_xy */
-#define BOARD_LCD_V_RES         240     /* Native height after swap_xy */
+#define BOARD_LCD_H_RES         240     /* Native width after swap_xy */
+#define BOARD_LCD_V_RES         135     /* Native height after swap_xy */
 #define BOARD_LCD_SPI_HOST      SPI2_HOST
 #define BOARD_LCD_SPI_FREQ_HZ   (20 * 1000 * 1000)
 #define BOARD_LCD_CMD_BITS      8
 #define BOARD_LCD_PARAM_BITS    8
-#define BOARD_LCD_SWAP_XY       true
+#define BOARD_LCD_SWAP_XY       false
 #define BOARD_LCD_MIRROR_X      false
 #define BOARD_LCD_MIRROR_Y      false
-#define BOARD_LCD_INVERT_COLOR  false   /* ILI9341 does not need inversion */
+#define BOARD_LCD_INVERT_COLOR  true   /* ILI9341 does not need inversion */
 #define BOARD_LCD_GAP_X         0
 #define BOARD_LCD_GAP_Y         0
 #define BOARD_LCD_BL_ACTIVE_LOW false
