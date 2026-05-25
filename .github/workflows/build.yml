@@ -28,6 +28,12 @@ jobs:
             artifact_name: flipper-lilygo-t-embed-cc1101
             chip: esp32s3
             flash_size: 16MB
+          - name: esp32s3_6buttons
+            script_key: esp32s3_6buttons
+            build_dir: build_6buttons
+            artifact_name: flipper-esp32s3-6buttons
+            chip: esp32s3
+            flash_size: 16MB
        #   - name: waveshare_c6_1.9
       #     script_key: waveshare_c6
       #     build_dir: build_waveshare_c6
