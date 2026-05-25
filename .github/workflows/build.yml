@@ -40,7 +40,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-
+          
+      - name: Clear Corrupted Managed Components
+        run: |
+          rm -rf managed_components
+          rm -f dependencies.lock
+          
       - name: Clean stale sdkconfig
         run: |
           rm -f sdkconfig
